@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Staatliches&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>Grocery List</title>
+</head>
+<body>
+    <div class="main-container flex">
+        <h1>Grocery List</h1>
+        <div class="grocery-input flex">
+            <input type="text" placeholder="e.g. eggs" id="grocery-item">
+            <button type="button" id="add">Add to List</button>
+        </div>
+        <div class="grocery-list">
+            <!-- Grocery items are inputed using JavaScript -->
+        </div>
+        <h2 style="display: none;">Clear Content</h2>
+
+        <div class="edit-value flex display">
+            <h3>Edit</h3>
+            <input type="text" id="edit-text">
+            <button type="button" id="edit-btn">Edit</button>
+        </div>
+    </div>
+    
+    <template>
+        <div class="grocery-item flex">
+            <div class="grocery-name">
+                <p class="item-name">Bacon</p>
+            </div>
+            <div class="items flex" style="justify-content: flex-end; gap: 15px;">
+                <img src="./images/create-outline.png" alt="" class="icon" id="edit">
+                <img src="./images/trash-outline.png" alt="Delete" class="icon" id="trash">
+            </div>
+        </div>
+    </template>
+
+    <script src="./script.js"></script>
+</body>
+</html>

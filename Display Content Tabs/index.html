@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Staatliches&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>Display content Tabs</title>
+</head>
+<body>
+    <div class="main-container flex">
+        <div class="details flex">
+            <h1>About</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione doloribus rerum ea facilis fuga sit eum dolor 
+                non, et modi, omnis asperiores perspiciatis impedit, mollitia voluptatem eius! Itaque, minima omnis.</p>
+        </div>
+        <div class="main-content flex">
+            <div class="img-box">
+                <img src="./images/pexels-tyler-clemmensen-6239334.jpg" alt="Aston Martin">
+            </div>
+            <div class="interative-text flex">
+                <div class="selectors">
+                    <ul class="flex">
+                        <li id="history" class="active">History</li>
+                        <li id="vision" class="">Vision</li>
+                        <li id="goals" class="">Goals</li>
+                    </ul>
+                </div>
+                <div class="selector-content" id="aston-history">
+                    <h2>History</h2>
+                    <p>Aston Martin, founded in 1913, is a legendary British luxury car manufacturer known for its 
+                        iconic designs, high-performance vehicles, and association with James Bond films.</p>
+                </div>
+                <div class="selector-content display" id="aston-vision">
+                    <h2>Vision</h2>
+                    <p>Aston Martin is a symbol of automotive excellence, capturing the essence of British luxury and craftsmanship. 
+                        With its sleek and iconic design, Aston Martin cars embody elegance and sophistication. Known for their powerful 
+                        engines and thrilling performance, these vehicles provide an exhilarating driving experience. Each Aston Martin is 
+                        meticulously crafted, showcasing attention to detail and delivering a blend of comfort and performance. With a rich heritage 
+                        and a commitment to innovation, Aston Martin continues to create automotive masterpieces that captivate enthusiasts worldwide.</p>
+                </div>
+                <div class="selector-content display" id="aston-goals">
+                    <h2>Goals</h2>
+                    <p>Aston Martin strives to redefine automotive excellence through its commitment to craftsmanship, cutting-edge technology, and a relentless 
+                        pursuit of driving perfection, providing enthusiasts with an unrivaled blend of performance, elegance, and British heritage.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>

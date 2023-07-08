@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+h1{
+    font-family: 'Staatliches', cursive;
+    font-size: 4rem;
+}
+
+h2{
+    font-size: 3.5rem;
+    color: red;
+}
+
+.container{
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    height: 100vh;
+    scale: 1.4;
+}
+
+.buttons{
+    gap: 20px;
+}
+
+button{
+    border: 2px solid black;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 10px;
+    filter: drop-shadow(1px 1px 4px rgba(0, 0, 0, 0.301));
+    background-color: white;
+}
+
+button:active{
+    scale: .9;
+    border: 2px solid blue;
+}
+
+button:after{
+    border: 2px solid blue;
+}

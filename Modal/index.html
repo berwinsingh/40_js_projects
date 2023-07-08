@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Staatliches&display=swap" rel="stylesheet">
+    <title>Modal Project</title>
+</head>
+<body>
+    <div class="main-container flex"> <!-- Here need to add a toggle JS class for temp-blur -->
+        <div class="container flex">
+            <h1>Modal Project</h1>
+            <button type="button" id="open-modal">Open Modal</button>
+            <!-- When the button is click I want the popup to be showcased -->
+        </div>
+        <div class="blur flex">
+            <div class="pop-up flex display">
+                <ion-icon name="close-outline" id="close"></ion-icon>
+                <h2 style="user-select: none;">Modal Content</h2>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

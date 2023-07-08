@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Staatliches&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>Restaurant Menu</title>
+</head>
+<body>
+    <div class="main-container flex">
+        <h1>Our Menu</h1>
+        <hr>
+        <div class="filter-items">
+            <ul class="flex">
+                <li><button type="button" class="filter" data-filter-name="All">All</button></li>
+                <li><button type="button" class="filter" data-filter-name="Breakfast">Breakfast</button></li>
+                <li><button type="button" class="filter" data-filter-name="Lunch">Lunch</button></li>
+                <li><button type="button" class="filter" data-filter-name="Shakes">Shakes</button></li>
+                <li><button type="button" class="filter" data-filter-name="Dinner">Dinner</button></li>
+            </ul>
+        </div>
+        <div class="menu-items grid">
+            <!-- Data is added through JS and Template property -->
+    </div>
+
+    <template>
+        <div class="food flex">
+            <div class="img">
+                <img src="./images/pexels-ash-376464.jpg" alt="" style="width: 200px; height: 100%px; overflow: hidden;">
+            </div>
+            <div class="details flex" style="flex-direction: column; gap: 10px; margin-inline: 5px;">
+                <div class="pricing flex">
+                    <h2>Strawberry Pancakes</h2>
+                    <h3 class="cost">$15.99</h3>
+                </div>
+                <hr>
+                <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis animi deserunt consequuntur laboriosam impedit culpa. A odit soluta placeat saepe itaque tenetur, rerum maiores sed id neque quaerat ex animi?</p>
+            </div>
+        </div>
+    </template>
+
+    <script src="./script.js"></script>
+</body>
+</html>

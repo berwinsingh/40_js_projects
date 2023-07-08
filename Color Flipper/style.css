@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 10px;
+}
+
+body{
+    background-color: azure;
+    /* This color can be changed and updated dynamically */
+}
+
+.content {
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.color-name p {
+    align-content: center;
+    background-color: black;
+    color: white;
+    padding-inline: 10px;
+    font-size: 1.5rem;
+}
+
+#color-change{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.308));
+}
+
+#color-change:active{
+    scale: .9;
+}

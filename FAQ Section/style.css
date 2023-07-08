@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --main-heading: 'Cedarville Cursive', cursive;
+    --paragraph-text: 'Roboto', sans-serif;
+    --gold-color: rgb(236, 205, 26);
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+body{
+    font-family: var(--paragraph-text);
+}
+
+h1{
+    font-family: var(--main-heading);
+    color: var(--gold-color);
+    font-size: 3rem;
+}
+
+.main-container{
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+}
+
+.container{
+    flex-direction: column;
+    gap: 30px;
+}
+
+.question-card{
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    width: 600px;
+    padding-inline: 10px;
+    height: 80px;
+    background-color: white;
+    border-radius: 5px;
+    filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.308));
+}
+
+hr{
+    width: 580px;
+    border: 1px solid black;
+}
+
+p{
+    font-size: 1.15rem;
+    font-weight: 500;
+}
+
+.interaction{
+    border: none;
+    background-color: transparent;
+    scale: 2.05;
+    color: var(--gold-color);
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.content{
+    width: 100%;
+    justify-content: space-between;
+}
+
+.content>p{
+    text-transform: capitalize;
+}
+
+.display{
+    display: none;
+}
+
+.expand{
+    height: 160px;
+    align-items: flex-start;
+    padding-top: 20px;
+}
+
+.temp-data{
+    flex-direction: column;
+}
+
+.temp-data>p{
+    font-weight: normal;
+    margin-top: 5px;
+}
